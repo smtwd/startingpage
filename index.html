@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Открытие ссылок</title>
+  <script>
+    window.onload = function () {
+      // список ссылок
+      const urls = [
+        "https://google.com",
+        "https://youtube.com",
+        "https://wikipedia.org"
+      ];
+
+      // открываем каждую в новой вкладке
+      urls.forEach(url => window.open(url, "_blank"));
+    };
+  </script>
+</head>
+<body>
+  <h2>Открываю ссылки...</h2>
+</body>
+</html>
