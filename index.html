@@ -7,13 +7,16 @@
     window.onload = function () {
       // список ссылок
       const urls = [
-        "https://google.com",
-        "https://youtube.com",
-        "https://wikipedia.org"
+        "https://docs.google.com/spreadsheets/d/1sDqNTzsxWagJcXBWnZAF1DCkLa-8UYg96v3_3l3XS44/", // питание
+        "https://docs.google.com/spreadsheets/d/1wvU1rD43FGLXSwb78LyNao9U6LsBt65CQurJJgGKGeo/", // цели
+        "https://docs.google.com/spreadsheets/d/1B8H9p-f_lZRHKlI9fYggpJpcooCwpfdEkU4AS55cVf8/" // трренировочный план
       ];
 
       // открываем каждую в новой вкладке
       urls.forEach(url => window.open(url, "_blank"));
+      setTimeout(() => {
+        window.close();
+      }, 1000);
     };
   </script>
 </head>
